@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <h2>Add New Candidate</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="candidate_name">Candidate Name:</label>
+        <input type="text" id="candidate_name" name="candidate_name" required>
+        <button type="submit">Add Candidate</button>
+    </form>
+</body>
+</html>
